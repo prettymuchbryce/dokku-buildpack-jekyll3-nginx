@@ -57,8 +57,7 @@ if [ ! -f $BUILD_DIR/.gems/bin/jekyll ]; then
     gem install listen -v "< 3.1" --no-rdoc --no-ri | indent
 
     gem install liquid --no-rdoc --no-ri | indent
-    gem install jekyll redcarpet sass --no-rdoc --no-ri | indent
-    gem install emoji_for_jekyll redcarpet sass --no-rdoc --no-ri | indent
+    gem install jekyll redcarpet sass emoji_for_jekyll --no-rdoc --no-ri | indent
     gem install therubyracer --no-rdoc --no-ri | indent
 
     if [ -f $BUILD_DIR/Gemfile ]; then
